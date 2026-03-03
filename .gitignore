@@ -1,0 +1,6 @@
+venv/
+.env
+*__pycache__*
+.idea/
+.dockerignore
+docker-compose.override.yml
