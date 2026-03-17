@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from fastapi import Request, Depends
 from jose import jwt, JWTError
 
-from exceptions import TokenExpiredException, TokenAbsentException, IncorrectTokenFormatException, \
+from src.exceptions import TokenExpiredException, TokenAbsentException, IncorrectTokenFormatException, \
     UserIsNotPresentException
 from src.config import settings
 from src.users.service import UsersService

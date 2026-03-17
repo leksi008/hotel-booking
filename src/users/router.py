@@ -1,7 +1,7 @@
-from fastapi import APIRouter, HTTPException, status, Depends
+from fastapi import APIRouter, Depends
 from starlette.responses import Response
 
-from exceptions import UserAlreadyExistsException, IncorrectEmailOrPasswordException
+from src.exceptions import UserAlreadyExistsException, IncorrectEmailOrPasswordException
 from src.users.auth import get_password_hash, authenticate_user, create_access_token
 from src.users.dependencies import get_current_user
 from src.users.models import Users

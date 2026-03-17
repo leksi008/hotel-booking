@@ -2,9 +2,9 @@ from datetime import date
 
 from fastapi import APIRouter, Depends
 
-from exceptions import RoomCanNotBeBooked
-from src.booking.schemas import SBooking
-from src.booking.service import BookingService
+from src.exceptions import RoomCanNotBeBooked
+from src.bookings.schemas import SBooking
+from src.bookings.service import BookingService
 from src.users.dependencies import get_current_user
 from src.users.models import Users
 
