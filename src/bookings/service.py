@@ -4,7 +4,7 @@ from sqlalchemy import select, and_, or_, func, insert
 
 from src.bookings.models import Bookings
 from src.database import async_session_maker
-from src.hotels.models import Rooms
+from src.hotels.rooms.models import Rooms
 from src.service.base import BaseService
 
 

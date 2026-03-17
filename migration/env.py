@@ -12,7 +12,8 @@ sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))))
 from src.database import Base
 from src.bookings.models import Bookings
 from src.users.models import Users
-from src.hotels.models import Hotels, Rooms
+from src.hotels.models import Hotels
+from src.hotels.rooms.models import Rooms
 from src.config import settings
 from src import database
 
