@@ -45,3 +45,13 @@ class IncorrectTokenFormatException(BookingException):
 class UserIsNotPresentException(BookingException):
     status_code = status.HTTP_401_UNAUTHORIZED
     detail = "User is not present"
+
+
+class CannotBookHotelForLongPeriod(BookingException):
+    status_code = status.HTTP_409_CONFLICT
+    detail = "Can not book hotel for long period"
+
+
+class DateFromCannotBeAfterDateTo(BookingException):
+    status_code = status.HTTP_409_CONFLICT
+    detail = "Date from can not be after date to"
